@@ -3,90 +3,396 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Pedro Henrique Prado</title>
+    <title>Pedro Henrique Prado — Dev Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Pedro Henrique Prado de Novaes</h1>
-            <p>Desenvolvedor Full Stack | Estudante de Desenvolvimento de Software Multiplataforma na Fatec Jacareí</p>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre Mim</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <span class="logo-bracket">&lt;</span>PHP<span class="logo-bracket">/&gt;</span>
         </div>
-    </header>
+        <ul class="nav-links">
+            <li><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li><a href="#habilidades" class="nav-link">Skills</a></li>
+            <li><a href="#abp" class="nav-link">ABP</a></li>
+            <li><a href="#projetos" class="nav-link">Projetos</a></li>
+            <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
 
-    <section id="sobre" class="container">
-    <h2>Sobre Mim</h2>
-    <div class="sobre-content">
-        <img src="../imagens/pedro.jpg" alt="Foto de Pedro Henrique Prado" class="minha-foto">
-        <div>
-            <p>
-                Olá! Me chamo <strong>Pedro Henrique Prado de Novaes</strong>, sou estudante de Desenvolvimento de Software Multiplataforma na <strong>Fatec de Jacareí</strong>.
-                Tenho conhecimentos em desenvolvimento web (HTML, CSS, JavaScript, TypeScript e React), banco de dados (PostgreSQL, MySQL), backend com Node.js e Express, além de geotecnologias utilizando ferramentas como Leaflet e PostGIS.
-                Já cursei disciplinas como Desenvolvimento Web I, Engenharia de Software, Banco de Dados, Modelagem, Redes e Sistemas Operacionais, além de Lógica de Programação. Atualmente continuo meus estudos com foco em desenvolvimento full stack, estrutura de dados e React.
-                Integro a equipe CAPYDEV, a mesma que realizei as ABP do primeiro e segundo semestre, resultando  no curso de metodologia Scrum e o Projeto Ignis, esse útimo, que estará disponivel neste portifólio.
-            </p>  
-            <br> 
-           
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="grid-lines"></div>
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
         </div>
-    </div>
-</section>
-
-   <section id="projetos" class="container">
-    <h2>Meus Projetos</h2>
-
-    <!-- ABP -->
-    <h3>📚 Projeto ABP</h3>
-    <div class="projetos-grid">
-        <div class="projeto">
-            <h4>🔥 Projeto Ignis</h4>
-            <p>Plataforma web para análise de dados geoespaciais como risco de fogo, focos de calor e áreas queimadas.</p>
-            <p><strong>Tecnologias:</strong> React, Node.js, Express, PostgreSQL, PostGIS, Leaflet</p>
-            <a href="https://github.com/Capydev-jac/Projeto-Ignis" target="_blank">Ver no GitHub</a>
+        <div class="hero-content">
+            <div class="hero-tag reveal">
+                <span class="tag-dot"></span> Disponível para oportunidades
+            </div>
+            <h1 class="hero-title reveal">
+                <span class="line-1">Pedro</span>
+                <span class="line-2">Henrique</span>
+                <span class="line-3">Prado<span class="accent">.</span></span>
+            </h1>
+            <p class="hero-subtitle reveal">
+                Desenvolvedor Full Stack &amp; Estudante na <em>Fatec Jacareí</em>
+            </p>
+            <div class="hero-cta reveal">
+                <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                <a href="#contato" class="btn-secondary">Entrar em Contato</a>
+            </div>
         </div>
-    </div>
-
-    <!-- Projetos Acadêmicos - Atividades -->
-    <h3>📝 Projetos Acadêmicos (Atividades de Sala)</h3>
-    <div class="projetos-grid">
-        <div class="projeto">
-            <h4>🎰 Gerador de Apostas Mega-Sena</h4>
-            <p>Aplicação que gera combinações para Mega-Sena, utilizando React e lógica de sorteio.</p>
-            <p><strong>Tecnologias:</strong> React, TypeScript, Vite</p>
-            <a href="https://github.com/PeedroPrado/ServerHTTP/tree/main/megasena" target="_blank">Ver no GitHub</a>
+        <div class="hero-scroll">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
         </div>
-
-        <div class="projeto">
-            <h4>🌍 Dados Espaciais</h4>
-            <p>Análise de dados geográficos utilizando SQL, GeoJSON e ferramentas geoespaciais.</p>
-            <p><strong>Tecnologias:</strong> SQL, PostGIS, GeoJSON</p>
-            <a href="https://github.com/PeedroPrado/DadosEspaciais" target="_blank">Ver no GitHub</a>
-        </div>
-
-        <div class="projeto">
-            <h4>🗺️ Atividade Censos</h4>
-            <p>Manipulação e análise de dados censitários.</p>
-            <p><strong>Tecnologias:</strong> Node.js, PostgreSQL, SQL</p>
-            <a href="https://github.com/PeedroPrado/Censos" target="_blank">Ver no GitHub</a>
-        </div>
-    </div>
-</section>
-
-    <section id="contato" class="container">
-        <h2>Contato</h2>
-        <p>✉️ Email: pedrohenriquepradodenovaes@gmail.com</p>
-        <p>💻 GitHub: <a href="https://github.com/PeedroPrado" target="_blank">github.com/PeedroPrado</a></p>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Pedro Henrique Prado de Novaes. Todos os direitos reservados.</p>
+    <!-- Sobre -->
+    <section id="sobre" class="section sobre-section">
+        <div class="container">
+            <div class="section-label reveal">// sobre mim</div>
+            <div class="sobre-grid">
+                <div class="sobre-img-wrapper reveal">
+                    <div class="img-frame">
+                        <img src="imagens/pedro.jpg" alt="Pedro Henrique Prado" class="sobre-foto">
+                        <div class="img-border"></div>
+                    </div>
+                    <div class="sobre-badge">
+                        <span class="badge-icon">🎓</span>
+                        <div>
+                            <strong>Fatec Jacareí</strong>
+                            <small>DSM — 2º Semestre</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-text reveal">
+                    <h2 class="section-title">Quem sou eu</h2>
+                    <p>
+                        Olá! Sou <strong>Pedro Henrique Prado de Novaes</strong>, estudante de 
+                        Desenvolvimento de Software Multiplataforma na <strong>Fatec de Jacareí</strong>.
+                    </p>
+                    <p>
+                        Tenho experiência em desenvolvimento web com <strong>HTML, CSS, JavaScript, TypeScript e React</strong>, 
+                        banco de dados com <strong>PostgreSQL e MySQL</strong>, backend com <strong>Node.js e Express</strong>, 
+                        e geotecnologias usando <strong>Leaflet e PostGIS</strong>.
+                    </p>
+                    <p>
+                        Faço parte da equipe <strong>CAPYDEV</strong>, com quem realizei os projetos ABP do 
+                        1º e 2º semestre — incluindo o curso de metodologia Scrum e o <em>Projeto Ignis</em>.
+                        Atualmente foco em desenvolvimento full stack, estruturas de dados e React.
+                    </p>
+                    <div class="sobre-links">
+                        <a href="https://github.com/PeedroPrado" target="_blank" class="icon-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            github.com/PeedroPrado
+                        </a>
+                        <a href="mailto:pedrohenriquepradodenovaes@gmail.com" class="icon-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            pedrohenriquepradodenovaes@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="habilidades" class="section skills-section">
+        <div class="container">
+            <div class="section-label reveal">// habilidades</div>
+            <h2 class="section-title reveal">Stack Tecnológico</h2>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🌐</span>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Leaflet</span>
+                        <span class="skill-tag">Vite</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">⚙️</span>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🗄️</span>
+                        <h3>Banco de Dados</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostGIS</span>
+                        <span class="skill-tag">GeoJSON</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🛠️</span>
+                        <h3>Ferramentas</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Scrum</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABP -->
+    <section id="abp" class="section abp-section">
+        <div class="container">
+            <div class="section-label reveal">// aprendizagem baseada em projetos</div>
+            <h2 class="section-title reveal">Projetos ABP — CAPYDEV</h2>
+            <p class="section-desc reveal">Projetos acadêmicos desenvolvidos em equipe pela CAPYDEV ao longo dos semestres do curso DSM na Fatec Jacareí.</p>
+
+            <div class="abp-timeline">
+
+                <!-- ABP 1 -->
+                <div class="abp-item reveal">
+                    <div class="abp-number">01</div>
+                    <div class="abp-card">
+                        <div class="abp-card-header">
+                            <div class="abp-semester">1º Semestre — 2024</div>
+                            <div class="abp-status status-done">Concluído</div>
+                        </div>
+                        <h3 class="abp-title">📋 Metodologia Scrum — Curso e Certificação</h3>
+                        <p class="abp-desc">
+                            No primeiro semestre, a equipe CAPYDEV desenvolveu um projeto focado na metodologia ágil Scrum. 
+                            O trabalho envolveu a criação de material didático, documentação de processos e a aplicação prática 
+                            de sprints, cerimônias e artefatos Scrum em contexto real de desenvolvimento.
+                        </p>
+                        <div class="abp-tech">
+                            <span>Scrum</span>
+                            <span>Metodologias Ágeis</span>
+                            <span>GitHub</span>
+                            <span>Documentação</span>
+                        </div>
+                        <a href="https://github.com/Capydev-jac" target="_blank" class="abp-link">
+                            Ver repositório da equipe
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ABP 2 -->
+                <div class="abp-item reveal">
+                    <div class="abp-number">02</div>
+                    <div class="abp-card abp-featured">
+                        <div class="abp-card-header">
+                            <div class="abp-semester">2º Semestre — 2024</div>
+                            <div class="abp-status status-done">Concluído</div>
+                        </div>
+                        <h3 class="abp-title">🔥 Projeto Ignis — Análise Geoespacial de Incêndios</h3>
+                        <p class="abp-desc">
+                            Plataforma web completa para análise de dados geoespaciais sobre risco de fogo, focos de calor 
+                            e áreas queimadas no Brasil. Sistema com mapa interativo, filtros por região e período, 
+                            e visualização de dados do INPE em tempo real.
+                        </p>
+                        <div class="abp-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>PostgreSQL</span>
+                            <span>PostGIS</span>
+                            <span>Leaflet</span>
+                            <span>TypeScript</span>
+                        </div>
+                        <a href="https://github.com/Capydev-jac/Projeto-Ignis" target="_blank" class="abp-link">
+                            Ver no GitHub
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ABP 3 -->
+                <div class="abp-item reveal">
+                    <div class="abp-number">03</div>
+                    <div class="abp-card">
+                        <div class="abp-card-header">
+                            <div class="abp-semester">3º Semestre — 2025</div>
+                            <div class="abp-status status-progress">Em andamento</div>
+                        </div>
+                        <h3 class="abp-title">🚀 Projeto em Desenvolvimento</h3>
+                        <p class="abp-desc">
+                            O projeto do 3º semestre está sendo desenvolvido pela equipe CAPYDEV. 
+                            As tecnologias e detalhes serão atualizados conforme o progresso. 
+                            Acompanhe o repositório da equipe para novidades!
+                        </p>
+                        <div class="abp-tech">
+                            <span>Em breve...</span>
+                        </div>
+                        <a href="https://github.com/Capydev-jac" target="_blank" class="abp-link">
+                            Acompanhar equipe CAPYDEV
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Outros Projetos -->
+    <section id="projetos" class="section projetos-section">
+        <div class="container">
+            <div class="section-label reveal">// projetos acadêmicos</div>
+            <h2 class="section-title reveal">Outros Projetos</h2>
+            <p class="section-desc reveal">Atividades e projetos desenvolvidos ao longo das disciplinas do curso.</p>
+
+            <div class="projetos-grid">
+
+                <div class="projeto-card reveal">
+                    <div class="projeto-card-top">
+                        <span class="projeto-icon">🎰</span>
+                        <div class="projeto-links">
+                            <a href="https://github.com/PeedroPrado/ServerHTTP/tree/main/megasena" target="_blank" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Gerador de Apostas Mega-Sena</h3>
+                    <p>Aplicação que gera combinações aleatórias para Mega-Sena com lógica de sorteio e interface interativa.</p>
+                    <div class="projeto-tech">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Vite</span>
+                    </div>
+                </div>
+
+                <div class="projeto-card reveal">
+                    <div class="projeto-card-top">
+                        <span class="projeto-icon">🌍</span>
+                        <div class="projeto-links">
+                            <a href="https://github.com/PeedroPrado/DadosEspaciais" target="_blank" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Dados Espaciais</h3>
+                    <p>Análise e manipulação de dados geográficos com SQL espacial, GeoJSON e ferramentas geoespaciais avançadas.</p>
+                    <div class="projeto-tech">
+                        <span>SQL</span>
+                        <span>PostGIS</span>
+                        <span>GeoJSON</span>
+                    </div>
+                </div>
+
+                <div class="projeto-card reveal">
+                    <div class="projeto-card-top">
+                        <span class="projeto-icon">🗺️</span>
+                        <div class="projeto-links">
+                            <a href="https://github.com/PeedroPrado/Censos" target="_blank" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Atividade Censos</h3>
+                    <p>Importação, manipulação e análise de dados censitários do IBGE com banco de dados relacional.</p>
+                    <div class="projeto-tech">
+                        <span>Node.js</span>
+                        <span>PostgreSQL</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="projeto-card reveal">
+                    <div class="projeto-card-top">
+                        <span class="projeto-icon">🖥️</span>
+                        <div class="projeto-links">
+                            <a href="https://github.com/PeedroPrado" target="_blank" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Servidor HTTP com Node.js</h3>
+                    <p>Implementação de servidor HTTP do zero com Node.js, explorando protocolos, rotas e requisições sem frameworks.</p>
+                    <div class="projeto-tech">
+                        <span>Node.js</span>
+                        <span>HTTP</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section contato-section">
+        <div class="container">
+            <div class="section-label reveal">// contato</div>
+            <h2 class="section-title reveal">Vamos conversar<span class="accent">?</span></h2>
+            <p class="section-desc reveal">Aberto a oportunidades, projetos e colaborações. Me manda uma mensagem!</p>
+            <div class="contato-cards reveal">
+                <a href="mailto:pedrohenriquepradodenovaes@gmail.com" class="contato-card">
+                    <div class="contato-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div>
+                        <strong>Email</strong>
+                        <span>pedrohenriquepradodenovaes@gmail.com</span>
+                    </div>
+                    <div class="contato-arrow">→</div>
+                </a>
+                <a href="https://github.com/PeedroPrado" target="_blank" class="contato-card">
+                    <div class="contato-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </div>
+                    <div>
+                        <strong>GitHub</strong>
+                        <span>github.com/PeedroPrado</span>
+                    </div>
+                    <div class="contato-arrow">→</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>PHP<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p>© 2025 Pedro Henrique Prado de Novaes — Todos os direitos reservados.</p>
+                <p class="footer-built">Desenvolvido com <span class="heart">♥</span> em HTML, CSS &amp; JS</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
