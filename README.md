@@ -161,7 +161,7 @@ Você pode abrir diretamente no navegador ou utilizar a extensão **Live Server*
 
 O projeto pode ser publicado utilizando:
 
-* GitHub Pages
+* GitHub Pages: https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423035/
 * Vercel
 * Netlify
 
