@@ -5,17 +5,19 @@
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 
+---
+
 ## 📌 Sobre o Projeto
 
 Este projeto é um portfólio pessoal desenvolvido para apresentar minhas habilidades, experiências e projetos na área de desenvolvimento de software.
 
 O site possui um design moderno e responsivo, destacando:
 
-* Informações pessoais e acadêmicas
-* Tecnologias dominadas
-* Projetos desenvolvidos
-* Experiências em ABP
-* Formas de contato
+- Informações pessoais e acadêmicas
+- Tecnologias dominadas
+- Projetos desenvolvidos
+- Experiências em ABP
+- Formas de contato
 
 O objetivo do portfólio é reunir meus principais trabalhos e demonstrar minha evolução como desenvolvedor.
 
@@ -27,13 +29,13 @@ Me chamo **Pedro Henrique Prado de Novaes** e sou estudante de **Desenvolvimento
 
 Tenho experiência com desenvolvimento Full Stack utilizando tecnologias modernas como:
 
-* React
-* React Native
-* TypeScript
-* JavaScript
-* Node.js
-* PostgreSQL
-* MongoDB
+- React
+- React Native
+- TypeScript
+- JavaScript
+- Node.js
+- PostgreSQL
+- MongoDB
 
 Além dos projetos acadêmicos, também desenvolvo aplicações pessoais voltadas para mapas interativos, visualização de dados e aplicações web.
 
@@ -43,29 +45,29 @@ Além dos projetos acadêmicos, também desenvolvo aplicações pessoais voltada
 
 ### Frontend
 
-* HTML5
-* CSS3
-* JavaScript
+- HTML5
+- CSS3
+- JavaScript
 
 ### Ferramentas e Tecnologias
 
-* Git
-* GitHub
-* VS Code
-* Figma
+- Git
+- GitHub
+- VS Code
+- Figma
 
 ---
 
 ## 📂 Estrutura do Projeto
 
 ```bash
-📦 portfolio
+📦 ra2581392423035
  ┣ 📂 docs
  ┃ ┣ 📂 imagens
- ┃ ┗ 📂 src
- ┃    ┣ 📜 index.html
- ┃    ┣ 📜 style.css
- ┃    ┗ 📜 script.js
+ ┃ ┣ 📜 index.html
+ ┃ ┣ 📜 style.css
+ ┃ ┣ 📜 script.js
+ ┃ ┗ 📜 README.md
  ┗ 📜 README.md
 ```
 
@@ -73,20 +75,21 @@ Além dos projetos acadêmicos, também desenvolvo aplicações pessoais voltada
 
 ## 🎨 Funcionalidades
 
-✅ Layout responsivo
-✅ Navegação suave entre seções
-✅ Animações e efeitos visuais
-✅ Cursor personalizado
-✅ Seção de projetos
-✅ Seção de contato
+✅ Layout responsivo  
+✅ Navegação suave entre seções  
+✅ Animações e efeitos visuais  
+✅ Cursor personalizado  
+✅ Seção de projetos  
+✅ Seção de contato  
+✅ GitHub Pages integrado  
 
 ---
 
 ## 📸 Preview do Projeto
 
-### Página Inicial
+### 🖥️ Tela Inicial do Portfólio
 
-![Preview do Portfólio](docs/imagens/aetheris-um.png)
+![Preview do Portfólio](docs/imagens/portfolio-preview.png)
 
 ---
 
@@ -96,28 +99,7 @@ Confira o vídeo de apresentação do portfólio, onde explico sobre os projetos
 
 [![Assista ao vídeo](https://img.youtube.com/vi/SEU_VIDEO/maxresdefault.jpg)](https://youtu.be/SEU_VIDEO)
 
-
-### 📌 Exemplo de incorporação do vídeo
-
-```html
-<video controls width="100%">
-  <source src="docs/videos/apresentacao.mp4" type="video/mp4">
-  Seu navegador não suporta vídeo.
-</video>
-```
-
-Ou utilizando YouTube:
-
-```html
-<iframe 
-  width="100%" 
-  height="500" 
-  src="https://www.youtube.com/embed/SEU_VIDEO" 
-  title="Vídeo de apresentação"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
-```
+Substitua `SEU_VIDEO` pelo ID do vídeo do YouTube.
 
 ---
 
@@ -142,7 +124,7 @@ Aplicação voltada para organização de tarefas e gerenciamento ágil.
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/PeedroPrado/ra2581392423035.git
+git clone https://github.com/fatec-jacarei-dsm-portfolio/ra2581392423035.git
 ```
 
 ### 2. Acesse a pasta do projeto
@@ -151,26 +133,66 @@ git clone https://github.com/PeedroPrado/ra2581392423035.git
 cd ra2581392423035
 ```
 
-### 3. Abra o arquivo `index.html`
+### 3. Abra o projeto
 
-Você pode abrir diretamente no navegador ou utilizar a extensão **Live Server** no VS Code.
+Abra o arquivo:
+
+```bash
+docs/index.html
+```
+
+Você pode utilizar a extensão **Live Server** no VS Code para executar o projeto localmente.
 
 ---
 
 ## 🌐 Deploy
 
-O projeto pode ser publicado utilizando:
+O projeto está publicado utilizando **GitHub Pages**.
 
-* GitHub Pages
-* Vercel
-* Netlify
+### 🔗 Acesse o projeto
+
+https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423035/
 
 ---
 
+## 🎥 Vídeo de Apresentação
+
+Confira o vídeo de apresentação do portfólio, onde explico sobre os projetos desenvolvidos, tecnologias utilizadas e minha trajetória acadêmica.
+
+### ▶️ Assista ao vídeo
+
+[![Assista ao vídeo](https://img.youtube.com/vi/SEU_VIDEO/maxresdefault.jpg)](https://youtu.be/SEU_VIDEO)
+
+---
+
+### 📌 Como adicionar seu vídeo
+
+Substitua `SEU_VIDEO` pelo ID do seu vídeo no YouTube.
+
+### Exemplo
+
+Link do vídeo:
+
+```txt
+https://youtu.be/abc123xyz
+```
+
+ID do vídeo:
+
+```txt
+abc123xyz
+```
+
+Resultado:
+
+```md
+[![Assista ao vídeo](https://img.youtube.com/vi/abc123xyz/maxresdefault.jpg)](https://youtu.be/abc123xyz)
+```
+
 ## 📬 Contato
 
-📧 Email: [pedrohenriquepradodenovaes@gmail.com](mailto:pedrohenriquepradodenovaes@gmail.com)
-💼 GitHub: [https://github.com/PeedroPrado](https://github.com/PeedroPrado)
+📧 Email: pedrohenriquepradodenovaes@gmail.com  
+💼 GitHub: https://github.com/PeedroPrado
 
 ---
 
