@@ -62,10 +62,10 @@ Além dos projetos acadêmicos, também desenvolvo aplicações pessoais voltada
 📦 portfolio
  ┣ 📂 docs
  ┃ ┣ 📂 imagens
- ┃ ┗ 📂 src
- ┃    ┣ 📜 index.html
- ┃    ┣ 📜 style.css
- ┃    ┗ 📜 script.js
+ ┃  
+ ┃ 📜 index.html 
+ ┃ 📜 style.css 
+ ┃ 📜 script.js 
  ┗ 📜 README.md
 ```
 
