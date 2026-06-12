@@ -1,12 +1,18 @@
-#  Portfólio — Fatec Jacareí
+# Portfólio de Projetos - Fatec Jacareí
 
-Aluno: Pedro Henrique Prado de Novaes <br>
-Curso: Desenvolvimento de Software Multiplataforma <br>
-Turma: 4 Semestre de 2026 <br>
+**Aluno:** [Pedro Henrique Prado de Novaes]  
+**Curso:** Desenvolvimento de Software Multiplataforma  
+**Turma:** [04/2024]
 
-## Portifólio Online:
-[Acesse o Portifólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423035/)
+---
 
-## Vídeos de Apresentação
+**Portfólio Online**
+
+🔗 [Acesse o Portfólio](LINK_PARA_PORTFOLIO)
+
+---
+
+**Vídeos de Apresentação**
 
 
+🎤 4DSM - [Vídeo](LINK_VIDEO_4DSM)  
