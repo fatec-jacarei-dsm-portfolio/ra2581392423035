@@ -2,7 +2,7 @@
 
 **Aluno:** [Pedro Henrique Prado de Novaes]  
 **Curso:** Desenvolvimento de Software Multiplataforma  
-**Turma:** [04/2024]
+**Turma:** [2º. Semestre 2024]
 
 ---
 
